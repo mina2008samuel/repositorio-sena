@@ -1,0 +1,14 @@
+body {
+    background-color: #ff0000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+.fondo-rojo {
+    background-color: #ff0000; /* Fondo rojo */
+    color: #fff; /* Texto blanco */
+}
+
+.degradado {
+    background-image: linear-gradient(to bottom, #000, #ff0000); /* Degradado de negro a rojo */
+    color: #fff; /* Texto blanco */
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack para dos jugadores</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .hidden { display: none; }
+    </style>
+    <link rel="estiloscss" href="estilos.css"> <!--Incluir el archivo css-->
+</head>
+<body>
+    <h1>Blackjack - Dos Jugadores</h1>
+    <div>
+        <p id="turno"></p>
+        <p id="puntos-jugador1">Jugador 1: 0 puntos</p>
+        <p id="puntos-jugador2">Jugador 2: 0 puntos</p>
+        <button id="jugar">Jugar Turno</button>
+        <button id="retirarse" class="hidden">Retirarse</button>
+        <p id="resultado"></p>
+    </div>
+    
+    <script src="blackjack.js"></script>
+</body>
+</html>
