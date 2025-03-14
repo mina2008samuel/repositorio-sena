@@ -8,7 +8,7 @@
         body { font-family: Arial, sans-serif; text-align: center; }
         .hidden { display: none; }
     </style>
-    <link rel="estiloscss" href="estilos.css"> <!--Incluir el archivo css-->
+    <link rel="stylesheet" href="estilos.css"> <!--Incluir el archivo css-->
 </head>
 <body>
     <h1>Blackjack - Dos Jugadores</h1>
@@ -18,9 +18,25 @@
         <p id="puntos-jugador2">Jugador 2: 0 puntos</p>
         <button id="jugar">Jugar Turno</button>
         <button id="retirarse" class="hidden">Retirarse</button>
+        <div id="reiniciar-container" class="hidden">
+            <button id="reiniciar">Reiniciar Juego</button>
+        </div>
         <p id="resultado"></p>
     </div>
     
     <script src="blackjack.js"></script>
+    <script>
+        document.getElementById("reiniciar").addEventListener("click", () => {
+            location.reload(); // Recarga la página para reiniciar el juego desde cero
+        });
+
+        function mostrarBotonReinicio() {
+            document.getElementById("reiniciar-container").classList.remove("hidden");
+        }
+
+        document.getElementById("jugar").addEventListener("click", () => {
+            mostrarBotonReinicio();
+        });
+    </script>
 </body>
 </html>
